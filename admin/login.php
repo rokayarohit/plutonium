@@ -1,4 +1,88 @@
-// HTML Under Construction 😁
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Login System</title>
+    <meta name="viewport" content="width=device-width">
+    
+    <style>
+        body{  
+         background-color:black;
+        color:white;
+         
+        }
+        #form{
+          
+           box-shadow: 0 0 0 13px #333 transparent;
+            border:25px solid red;
+            background-image: linear-gradient(red,green,blue);
+            border-radius:50px;
+            width:300px;
+        }
+        h2{
+            background-color:#211f19;
+            color:white;
+            font-weight:bold;
+            border:1px solid red;
+          
+        }
+        input{
+            height:40px;
+      font-weight:bold;
+      border-radius:5px;
+        }
+        input[type=submit]{
+            background-color:#03fc0b;
+            border:none;
+            width:200px;
+            height:40px;
+            font-size:30px;
+            color:#2403fc;
+            border-radius:50px;
+        }
+      #span{
+          font-size:50px;
+          margin:10px;
+          font-weight:900;
+          font-family: cursive;
+      }
+   </style>
+</head>
+<body>
+    <center>
+    <h1 align="center">Glad To See you 😊</h1>
+    <br>
+    <br>
+    <form method="post">
+        <div id="form">
+       <span id="span">Plutonium</span>
+     <h2>Login To Continue 🥺</h2>
+    
+     <input type="text" name="user" placeholder="Enter Username"><br>
+     <br>
+     <input type="password" name="pass" placeholder="Enter Password">
+     <br>
+     <br>
+     <input type="Submit" value="Login 🥳">
+     <br>
+     <br>
+
+     </div>
+    </form>
+    <br>
+    <br>
+   <br>
+    <small>Copyright <sup>&copy </sup>2022 -  Nishant Shah</small>
+    
+    
+    </center>
+</body>
+</html>
+
+
+
+
+
 <?php
 session_start();
 $user = $_POST['user'];
@@ -6,4 +90,8 @@ $pass = $_POST['pass'];
 if($user==admin && $pass==admin){
 echo "You're Welcome Mr. Plutonium";
 echo "<script>window.location.href='index.php';</script>";
+}
+else{
+echo " Try Again 😔";
+}
 ?>
