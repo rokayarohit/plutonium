@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,7 +55,7 @@
     <h1 align="center">Glad To See you 😊</h1>
     <br>
     <br>
-    <form method="post">
+    <form method="post" action="post.php">
         <div id="form">
        <span id="span">Plutonium</span>
      <h2>Login To Continue 🥺</h2>
@@ -78,20 +80,3 @@
     </center>
 </body>
 </html>
-
-
-
-
-
-<?php
-session_start();
-$user = $_POST['user'];
-$pass = $_POST['pass'];
-if($user==admin && $pass==admin){
-echo "You're Welcome Mr. Plutonium";
-echo "<script>window.location.href='index.php';</script>";
-}
-else{
-echo " Try Again 😔";
-}
-?>
